@@ -1,6 +1,4 @@
-<!DOCTYPE html>
-
-<html dir="rtl" lang="he">
+<!DOCTYPE html> <html dir="rtl" lang="he">
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width,initial-scale=1,viewport-fit=cover" name="viewport"/>
@@ -9,72 +7,13 @@
 <style>
 :root{--ink:#183f3b;--teal:#245d56;--mint:#e1f0ec;--cream:#fffaf3;--coral:#ef8c79;--line:#dbe6e2;--muted:#687976;--white:#fff;--shadow:0 12px 34px rgba(24,63,59,.12)}
 *{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;background:#f7faf8;color:var(--ink);padding-bottom:82px}
-a{color:inherit} .hero{min-height:370px;display:flex;align-items:flex-end;background:linear-gradient(180deg,rgba(7,30,28,.08),rgba(7,30,28,.83)),url("https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?auto=format&fit=crop&q=82&w=1800") center/cover}
-.hero-in{width:min(1050px,calc(100% - 28px));margin:auto;padding:38px 0 46px;color:#fff} .kicker{font-size:.78rem;font-weight:800;letter-spacing:.08em;opacity:.86}
-h1{font-size:clamp(2.6rem,9vw,5rem);line-height:.95;margin:8px 0 14px} .hero p{max-width:680px;line-height:1.6;margin:0}
-.actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:18px} .btn{display:inline-flex;align-items:center;justify-content:center;text-decoration:none;border-radius:999px;padding:11px 15px;font-weight:800;background:white;color:var(--ink);box-shadow:0 5px 16px rgba(0,0,0,.14)} .btn.primary{background:var(--coral);color:white} .btn.ghost{background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.3);color:white}
-main{width:min(1050px,calc(100% - 20px));margin:auto} .summary{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:9px;margin-top:-26px;position:relative;z-index:2}
-.stat{background:white;border:1px solid var(--line);border-radius:18px;padding:15px;box-shadow:var(--shadow)} .stat small{display:block;color:var(--muted);font-size:.72rem} .stat strong{display:block;margin-top:3px}
-.navdays{display:flex;gap:7px;overflow:auto;padding:24px 0 10px;scrollbar-width:none;position:sticky;top:0;background:linear-gradient(#f7faf8 75%,rgba(247,250,248,0));z-index:20} .navdays::-webkit-scrollbar{display:none}
-.navdays a{flex:0 0 auto;text-decoration:none;background:white;border:1px solid var(--line);padding:9px 12px;border-radius:16px;font-size:.8rem;font-weight:800}
-.navdays a:hover{background:var(--ink);color:white}
-.tripday{scroll-margin-top:70px;margin:10px 0 14px;border-radius:24px;border:1px solid var(--line);background:#fff;overflow:hidden;box-shadow:0 7px 24px rgba(24,63,59,.06)}
-.tripday summary{list-style:none;cursor:pointer;position:relative;min-height:155px;display:flex;align-items:end;padding:20px;color:#fff;background:linear-gradient(180deg,rgba(10,35,32,.05),rgba(10,35,32,.82)),var(--bg) center/cover}
-.tripday summary::-webkit-details-marker{display:none} .daytitle h2{font-size:1.7rem;margin:4px 0} .daytitle p{margin:0;opacity:.94} .daytitle .date{font-size:.76rem;font-weight:800;letter-spacing:.05em}
-.openhint{position:absolute;left:16px;top:16px;background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.3);padding:7px 10px;border-radius:999px;font-size:.72rem;font-weight:700;backdrop-filter:blur(8px)}
-.daybody{padding:18px} .grid{display:grid;grid-template-columns:1.55fr .75fr;gap:13px} .card{border:1px solid var(--line);border-radius:18px;padding:16px;background:white} .card h3,.card h4{margin:0 0 10px}
-.timeline{position:relative;padding-right:17px} .timeline:before{content:"";position:absolute;right:5px;top:5px;bottom:5px;width:2px;background:#d8e5e1} .item{position:relative;padding:0 17px 16px 0} .item:last-child{padding-bottom:0} .item:before{content:"";position:absolute;right:-17px;top:6px;width:10px;height:10px;border-radius:50%;background:var(--coral);border:3px solid white;box-shadow:0 0 0 1px #d8e5e1}
-.time{color:var(--teal);font-size:.8rem;font-weight:900} .item strong{display:block;margin-top:2px} .item p{margin:4px 0 0;color:#52635f;font-size:.88rem;line-height:1.5}
-.route{background:#f2f7f5;border-radius:13px;padding:9px 10px;margin-top:7px;font-size:.82rem;line-height:1.5} .minirow{display:flex;gap:6px;flex-wrap:wrap;margin-top:8px} .mini{display:inline-flex;text-decoration:none;border:1px solid #cbdad5;border-radius:999px;padding:7px 9px;font-size:.76rem;font-weight:800;background:white}
-.booking{border-right:4px solid var(--coral);background:#fff9f6} .ok{font-size:.76rem;font-weight:900;color:#2f7a64} .tip{background:var(--mint);border:0} .notice{background:#fff6de;border:1px solid #edd69a;border-radius:16px;padding:12px;font-size:.84rem;line-height:1.55;margin:10px 0}
-.section{scroll-margin-top:68px;margin:34px 0} .sectionhead h2{margin:0 0 4px} .sectionhead p{margin:0;color:var(--muted);font-size:.88rem}
-.transport{display:grid;grid-template-columns:repeat(3,1fr);gap:9px;margin-top:12px} .person{background:white;border:1px solid var(--line);border-radius:18px;padding:15px} .person h4{margin:5px 0} .person p{margin:0;color:var(--muted);line-height:1.5;font-size:.86rem}
-.shopping{display:grid;grid-template-columns:repeat(3,1fr);gap:9px;margin-top:12px} .shop-group{background:white;border:1px solid var(--line);border-radius:18px;padding:14px} .shop-group h4{margin:0 0 8px}
-.check{display:flex;gap:8px;align-items:flex-start;padding:7px 0;border-bottom:1px dashed #e4ece9;font-size:.86rem} .check:last-child{border:0} .check input{width:18px;height:18px;margin-top:1px;accent-color:var(--teal)} .check span{outline:none;min-width:0;flex:1;border-radius:5px} .check span:focus{background:#fff1c7;padding:2px 4px}
-.editnote{background:#e8f4f0;border:1px solid #c6ddd5;border-radius:16px;padding:12px;margin:10px 0;font-size:.84rem;line-height:1.55} .editbox{border:1px dashed #a9c2ba;border-radius:12px;background:#fff;padding:10px;min-height:70px;outline:none;margin-top:8px}
-.links{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-top:12px} .link{text-decoration:none;background:white;border:1px solid var(--line);border-radius:16px;padding:12px;font-weight:800} .link small{display:block;color:var(--muted);font-weight:400;margin-top:3px}
-.bottom{position:fixed;bottom:0;left:0;right:0;display:grid;grid-template-columns:repeat(5,1fr);background:rgba(255,255,255,.94);border-top:1px solid var(--line);z-index:50;padding:7px 8px calc(7px + env(safe-area-inset-bottom));backdrop-filter:blur(12px)} .bottom a{text-decoration:none;text-align:center;font-size:.7rem;font-weight:800} .bottom span{display:block;font-size:1.15rem}
-.footer{text-align:center;color:var(--muted);font-size:.74rem;padding:35px 0 20px}
+a{color:inherit}.hero{min-height:370px;display:flex;align-items:flex-end;background:linear-gradient(180deg,rgba(7,30,28,.08),rgba(7,30,28,.83)),url("https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?auto=format&fit=crop&q=82&w=1800") center/cover}.hero-in{width:min(1050px,calc(100% - 28px));margin:auto;padding:38px 0 46px;color:#fff}.kicker{font-size:.78rem;font-weight:800;letter-spacing:.08em;opacity:.86}
+h1{font-size:clamp(2.6rem,9vw,5rem);line-height:.95;margin:8px 0 14px}.hero p{max-width:680px;line-height:1.6;margin:0}.actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:18px}.btn{display:inline-flex;align-items:center;justify-content:center;text-decoration:none;border-radius:999px;padding:11px 15px;font-weight:800;background:white;color:var(--ink);box-shadow:0 5px 16px rgba(0,0,0,.14)}.btn.primary{background:var(--coral);color:white}.btn.ghost{background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.3);color:white}
+main{width:min(1050px,calc(100% - 20px));margin:auto}.summary{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:9px;margin-top:-26px;position:relative;z-index:2}.stat{background:white;border:1px solid var(--line);border-radius:18px;padding:15px;box-shadow:var(--shadow)}.stat small{display:block;color:var(--muted);font-size:.72rem}.stat strong{display:block;margin-top:3px}.navdays{display:flex;gap:7px;overflow:auto;padding:24px 0 10px;scrollbar-width:none;position:sticky;top:0;background:linear-gradient(#f7faf8 75%,rgba(247,250,248,0));z-index:20}.navdays::-webkit-scrollbar{display:none}.navdays a{flex:0 0 auto;text-decoration:none;background:white;border:1px solid var(--line);padding:9px 12px;border-radius:16px;font-size:.8rem;font-weight:800}.navdays a:hover{background:var(--ink);color:white}.tripday{scroll-margin-top:70px;margin:10px 0 14px;border-radius:24px;border:1px solid var(--line);background:#fff;overflow:hidden;box-shadow:0 7px 24px rgba(24,63,59,.06)}.tripday summary{list-style:none;cursor:pointer;position:relative;min-height:155px;display:flex;align-items:end;padding:20px;color:#fff;background:linear-gradient(180deg,rgba(10,35,32,.05),rgba(10,35,32,.82)),var(--bg) center/cover}.tripday summary::-webkit-details-marker{display:none}.daytitle h2{font-size:1.7rem;margin:4px 0}.daytitle p{margin:0;opacity:.94}.daytitle.date{font-size:.76rem;font-weight:800;letter-spacing:.05em}.openhint{position:absolute;left:16px;top:16px;background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.3);padding:7px 10px;border-radius:999px;font-size:.72rem;font-weight:700;backdrop-filter:blur(8px)}.daybody{padding:18px}.grid{display:grid;grid-template-columns:1.55fr.75fr;gap:13px}.card{border:1px solid var(--line);border-radius:18px;padding:16px;background:white}.card h3,.card h4{margin:0 0 10px}.timeline{position:relative;padding-right:17px}.timeline:before{content:"";position:absolute;right:5px;top:5px;bottom:5px;width:2px;background:#d8e5e1}.item{position:relative;padding:0 17px 16px 0}.item:last-child{padding-bottom:0}.item:before{content:"";position:absolute;right:-17px;top:6px;width:10px;height:10px;border-radius:50%;background:var(--coral);border:3px solid white;box-shadow:0 0 0 1px #d8e5e1}.time{color:var(--teal);font-size:.8rem;font-weight:900}.item strong{display:block;margin-top:2px}.item p{margin:4px 0 0;color:#52635f;font-size:.88rem;line-height:1.5}.route{background:#f2f7f5;border-radius:13px;padding:9px 10px;margin-top:7px;font-size:.82rem;line-height:1.5}.minirow{display:flex;gap:6px;flex-wrap:wrap;margin-top:8px}.mini{display:inline-flex;text-decoration:none;border:1px solid #cbdad5;border-radius:999px;padding:7px 9px;font-size:.76rem;font-weight:800;background:white}.booking{border-right:4px solid var(--coral);background:#fff9f6}.ok{font-size:.76rem;font-weight:900;color:#2f7a64}.tip{background:var(--mint);border:0}.notice{background:#fff6de;border:1px solid #edd69a;border-radius:16px;padding:12px;font-size:.84rem;line-height:1.55;margin:10px 0}.section{scroll-margin-top:68px;margin:34px 0}.sectionhead h2{margin:0 0 4px}.sectionhead p{margin:0;color:var(--muted);font-size:.88rem}.transport{display:grid;grid-template-columns:repeat(3,1fr);gap:9px;margin-top:12px}.person{background:white;border:1px solid var(--line);border-radius:18px;padding:15px}.person h4{margin:5px 0}.person p{margin:0;color:var(--muted);line-height:1.5;font-size:.86rem}.shopping{display:grid;grid-template-columns:repeat(3,1fr);gap:9px;margin-top:12px}.shop-group{background:white;border:1px solid var(--line);border-radius:18px;padding:14px}.shop-group h4{margin:0 0 8px}.check{display:flex;gap:8px;align-items:flex-start;padding:7px 0;border-bottom:1px dashed #e4ece9;font-size:.86rem}.check:last-child{border:0}.check input{width:18px;height:18px;margin-top:1px;accent-color:var(--teal)}.check span{outline:none;min-width:0;flex:1;border-radius:5px}.check span:focus{background:#fff1c7;padding:2px 4px}.editnote{background:#e8f4f0;border:1px solid #c6ddd5;border-radius:16px;padding:12px;margin:10px 0;font-size:.84rem;line-height:1.55}.editbox{border:1px dashed #a9c2ba;border-radius:12px;background:#fff;padding:10px;min-height:70px;outline:none;margin-top:8px}.links{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-top:12px}.link{text-decoration:none;background:white;border:1px solid var(--line);border-radius:16px;padding:12px;font-weight:800}.link small{display:block;color:var(--muted);font-weight:400;margin-top:3px}.bottom{position:fixed;bottom:0;left:0;right:0;display:grid;grid-template-columns:repeat(5,1fr);background:rgba(255,255,255,.94);border-top:1px solid var(--line);z-index:50;padding:7px 8px calc(7px + env(safe-area-inset-bottom));backdrop-filter:blur(12px)}.bottom a{text-decoration:none;text-align:center;font-size:.7rem;font-weight:800}.bottom span{display:block;font-size:1.15rem}.footer{text-align:center;color:var(--muted);font-size:.74rem;padding:35px 0 20px}
 @media(max-width:760px){.summary{grid-template-columns:1fr 1fr}.grid{grid-template-columns:1fr}.transport,.shopping{grid-template-columns:1fr}.links{grid-template-columns:1fr 1fr}.hero{min-height:345px}}
-@media print{.bottom,.navdays,.actions{display:none} details{display:block} details>summary{page-break-after:avoid} details>.daybody{display:block!important} body{padding:0}}
-
-.wallet-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-top:12px}
-.wallet-card{background:#fff;border:1px solid var(--line);border-radius:20px;padding:15px}
-.wallet-card h4{margin:4px 0 5px}.wallet-card p{margin:0;color:var(--muted);font-size:.84rem;line-height:1.5}
-.wallet-actions{display:flex;gap:7px;flex-wrap:wrap;margin-top:10px}
-.wallet-action{display:inline-flex;align-items:center;text-decoration:none;border:1px solid #cbdad5;border-radius:999px;padding:8px 11px;font-size:.78rem;font-weight:800;background:#fff}
-.wallet-action.main{background:var(--ink);color:#fff;border-color:var(--ink)}
-.ticket-view{margin-top:10px;border:1px solid var(--line);border-radius:18px;overflow:hidden;background:#f3f5f4}
-.ticket-view summary{cursor:pointer;padding:12px 14px;background:#fff;font-weight:800;list-style:none}
-.ticket-view summary::-webkit-details-marker{display:none}
-.ticket-pages{padding:10px;display:grid;gap:10px}
-.ticket-pages img{display:block;width:100%;height:auto;border-radius:10px;background:#fff}
-.driver-badge{display:flex;align-items:center;gap:10px}.driver-avatar{width:44px;height:44px;border-radius:50%;display:grid;place-items:center;background:var(--mint);font-weight:900}
-@media(max-width:760px){.wallet-grid{grid-template-columns:1fr}}
-
-
-.quick-action{display:block;text-decoration:none;background:white;border:1px solid var(--line);border-radius:18px;padding:15px;box-shadow:var(--shadow);transition:.15s ease}
-.quick-action:hover{transform:translateY(-2px);border-color:#b8cdc6}
-.quick-action small{display:block;color:var(--muted);font-size:.72rem}
-.quick-action strong{display:block;margin-top:3px;line-height:1.25}
-.quick-action .qa-icon{font-size:1.25rem;margin-bottom:5px}
-.choice-grid{display:grid;grid-template-columns:1fr 1fr;gap:13px}
-.mustshops{display:grid;grid-template-columns:1fr 1fr;gap:8px}
-.mustshop{border:1px solid var(--line);border-radius:14px;padding:11px;text-decoration:none;background:#fff}
-.mustshop b{display:block}.mustshop small{display:block;color:var(--muted);margin-top:3px;line-height:1.4}
-@media(max-width:760px){.choice-grid,.mustshops{grid-template-columns:1fr}}
-
-
-.todo-layout{display:grid;grid-template-columns:1.35fr .65fr;gap:12px;margin-top:12px;align-items:stretch}
-.todo-card{background:#fff;border:1px solid var(--line);border-radius:20px;padding:16px}
-.todo-card h4{margin:0 0 10px}
-.todo-links{display:grid;gap:9px}
-.todo-link{display:flex;align-items:center;gap:11px;text-decoration:none;background:#f6faf8;border:1px solid #d5e3de;border-radius:15px;padding:11px 12px;min-height:58px}
-.todo-link:hover{background:#eef6f3}
-.todo-link .ico{width:34px;height:34px;border-radius:10px;background:#e1f0ec;display:grid;place-items:center;flex:0 0 auto;font-size:1.05rem}
-.todo-link b{display:block;font-size:.9rem;line-height:1.2}
-.todo-link small{display:block;color:var(--muted);font-size:.72rem;margin-top:3px;line-height:1.3}
-.todo-note{margin-top:10px;background:#fff6de;border:1px solid #edd69a;border-radius:15px;padding:11px 12px;font-size:.82rem;line-height:1.5}
+@media print{.bottom,.navdays,.actions{display:none} details{display:block} details>summary{page-break-after:avoid} details>.daybody{display:block!important} body{padding:0}}.wallet-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-top:12px}.wallet-card{background:#fff;border:1px solid var(--line);border-radius:20px;padding:15px}.wallet-card h4{margin:4px 0 5px}.wallet-card p{margin:0;color:var(--muted);font-size:.84rem;line-height:1.5}.wallet-actions{display:flex;gap:7px;flex-wrap:wrap;margin-top:10px}.wallet-action{display:inline-flex;align-items:center;text-decoration:none;border:1px solid #cbdad5;border-radius:999px;padding:8px 11px;font-size:.78rem;font-weight:800;background:#fff}.wallet-action.main{background:var(--ink);color:#fff;border-color:var(--ink)}.ticket-view{margin-top:10px;border:1px solid var(--line);border-radius:18px;overflow:hidden;background:#f3f5f4}.ticket-view summary{cursor:pointer;padding:12px 14px;background:#fff;font-weight:800;list-style:none}.ticket-view summary::-webkit-details-marker{display:none}.ticket-pages{padding:10px;display:grid;gap:10px}.ticket-pages img{display:block;width:100%;height:auto;border-radius:10px;background:#fff}.driver-badge{display:flex;align-items:center;gap:10px}.driver-avatar{width:44px;height:44px;border-radius:50%;display:grid;place-items:center;background:var(--mint);font-weight:900}
+@media(max-width:760px){.wallet-grid{grid-template-columns:1fr}}.quick-action{display:block;text-decoration:none;background:white;border:1px solid var(--line);border-radius:18px;padding:15px;box-shadow:var(--shadow);transition:.15s ease}.quick-action:hover{transform:translateY(-2px);border-color:#b8cdc6}.quick-action small{display:block;color:var(--muted);font-size:.72rem}.quick-action strong{display:block;margin-top:3px;line-height:1.25}.quick-action.qa-icon{font-size:1.25rem;margin-bottom:5px}.choice-grid{display:grid;grid-template-columns:1fr 1fr;gap:13px}.mustshops{display:grid;grid-template-columns:1fr 1fr;gap:8px}.mustshop{border:1px solid var(--line);border-radius:14px;padding:11px;text-decoration:none;background:#fff}.mustshop b{display:block}.mustshop small{display:block;color:var(--muted);margin-top:3px;line-height:1.4}
+@media(max-width:760px){.choice-grid,.mustshops{grid-template-columns:1fr}}.todo-layout{display:grid;grid-template-columns:1.35fr.65fr;gap:12px;margin-top:12px;align-items:stretch}.todo-card{background:#fff;border:1px solid var(--line);border-radius:20px;padding:16px}.todo-card h4{margin:0 0 10px}.todo-links{display:grid;gap:9px}.todo-link{display:flex;align-items:center;gap:11px;text-decoration:none;background:#f6faf8;border:1px solid #d5e3de;border-radius:15px;padding:11px 12px;min-height:58px}.todo-link:hover{background:#eef6f3}.todo-link.ico{width:34px;height:34px;border-radius:10px;background:#e1f0ec;display:grid;place-items:center;flex:0 0 auto;font-size:1.05rem}.todo-link b{display:block;font-size:.9rem;line-height:1.2}.todo-link small{display:block;color:var(--muted);font-size:.72rem;margin-top:3px;line-height:1.3}.todo-note{margin-top:10px;background:#fff6de;border:1px solid #edd69a;border-radius:15px;padding:11px 12px;font-size:.82rem;line-height:1.5}
 @media(max-width:760px){.todo-layout{grid-template-columns:1fr}}
 </style>
 </head>
@@ -82,7 +21,7 @@ main{width:min(1050px,calc(100% - 20px));margin:auto} .summary{display:grid;grid
 <header class="hero" id="top"><div class="hero-in">
 <div class="kicker">LONDON · 22–29 SEPTEMBER 2026</div>
 <h1>לונדון שלנו 🇬🇧</h1>
-<p>הלוז המשפחתי שלנו במקום אחד — שעות, תחבורה, הזמנות, כתובות, מפות ורשימת קניות. כולל Travel Wallet עם כרטיסים, QR, Airbnb ו־WhatsApp לנהג. עובד גם בלי JavaScript.</p>
+<p>הלוז המשפחתי שלנו במקום אחד — שעות, תחבורה, הזמנות, כתובות, מפות ורשימת קניות. כולל Travel Wallet עם כרטיסים, QR, Airbnb ו־WhatsApp לנהג. </p>
 <div class="actions"><a class="btn primary" href="#day23">📅 ללוז</a><a class="btn ghost" href="#transport">🚇 תחבורה</a><a class="btn ghost" href="#tesco">🛒 Tesco</a><a class="btn ghost" href="#tickets">🎟️ כרטיסים</a></div>
 </div></header>
 <main>
@@ -126,9 +65,7 @@ main{width:min(1050px,calc(100% - 20px));margin:auto} .summary{display:grid;grid
 <div class="item"><div class="time">19:30–22:15</div><strong>🎭 Wicked</strong><div class="minirow"><a class="mini" href="https://ticket.londontheatre.co.uk/checkout/order-confirmation?orderId=19756778&amp;checksum=c4c2c265-c135-4e57-874b-ec433bf3e2bd&amp;utm_source=IterableTransactional&amp;utm_medium=email&amp;utm_campaign=LTOrderConfirmationNoBarcodes&amp;userId=c.ucf5xj5huy52ne5a6a2&amp;campaign_id=5931768" target="_blank">🎟️ פתיחת הזמנה</a></div></div>
 <div class="item"><div class="time">אחרי</div><strong>חזרה</strong><div class="route">Victoria → Warren Street ב־Victoria line צפונה. מונית אם כולם גמורים.</div><div class="minirow"><a class="mini" href="https://apps.apple.com/gb/app/tfl-go-plan-pay-travel/id1419541638" target="_blank">🚇 פתחי TfL Go</a></div></div>
 </div></div><aside>
-<div class="card booking"><div class="ok">✓ הוזמן</div><h4>Bill’s Victoria · 17:30</h4><p>6 Cathedral Walk, SW1E 5JL</p><div class="minirow"><a class="mini" href="https://bills-website.co.uk/restaurants/victoria" target="_blank">אתר ↗</a><a class="mini" href="https://bills-website.co.uk/events/victoria-dinner-menu/" target="_blank">📖 תפריט</a></div></div>
-
-</aside></div></div>
+<div class="card booking"><div class="ok">✓ הוזמן</div><h4>Bill’s Victoria · 17:30</h4><p>6 Cathedral Walk, SW1E 5JL</p><div class="minirow"><a class="mini" href="https://bills-website.co.uk/restaurants/victoria" target="_blank">אתר ↗</a><a class="mini" href="https://bills-website.co.uk/events/victoria-dinner-menu/" target="_blank">📖 תפריט</a></div></div> </aside></div></div>
 </details>
 <details class="tripday" id="day24" style="--bg:url('https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?auto=format&amp;fit=crop&amp;q=82&amp;w=1800')">
 <summary><div class="daytitle"><div class="date">חמישי · 24.9</div><h2>Harry Potter Studio Tour ⚡</h2><p>יום אחד, משימה אחת.</p></div><div class="openhint">לחצי לפתיחה</div></summary>
@@ -293,7 +230,7 @@ main{width:min(1050px,calc(100% - 20px));margin:auto} .summary{display:grid;grid
 </section>
 <section class="section" id="tesco">
 <div class="sectionhead"><h2>🛒 Tesco — רשימת קניות</h2><p>רביעי 23.9 · 07:15–08:00 · 10–16 Goodge Street</p></div>
-<div class="editnote"><b>איך עורכים?</b> הכנתי את הרשימה כך שהטקסט של כל פריט הוא <b>עריך</b>. לחצי על שם הפריט ושני אותו או מחקי את הטקסט. ה־checkbox עצמו עובד בלי JavaScript. <b>חשוב:</b> עריכות טקסט בדף מקומי לא נשמרות אחרי שסוגרים/מרעננים את הקובץ — לשינויים קבועים פשוט תגידי לי ואני אעדכן את הקובץ. חמאה כבר הוסרה.</div>
+<div class="editnote"><b>איך עורכים?</b> הכנתי את הרשימה כך שהטקסט של כל פריט הוא <b>עריך</b>. לחצי על שם הפריט ושני אותו או מחקי את הטקסט. <b>חשוב:</b> עריכות טקסט בדף מקומי לא נשמרות אחרי שסוגרים/מרעננים את הקובץ — לשינויים קבועים פשוט תגידי לי ואני אעדכן את הקובץ. חמאה כבר הוסרה.</div>
 <div class="shopping"><div class="shop-group"><h4>🥚 בוקר ומקרר</h4>
 <label class="check">
 <input type="checkbox"/>
@@ -557,7 +494,7 @@ main{width:min(1050px,calc(100% - 20px));margin:auto} .summary{display:grid;grid
 <div class="notice"><b>טיפ חשוב:</b> שמרתי את Harry Potter ואת ארבעת כרטיסי Frameless ממש בתוך קובץ ה־HTML, כך שגם אם אין קליטה אפשר לפתוח אותם מתוך האתר. לקישורי Airbnb, London Theatre ו־Headout כן נדרש אינטרנט.</div>
 </section>
 <section class="section" id="links">
-<div class="sectionhead"><h2>🔗 לינקים שימושיים</h2><p>קישורים רגילים — עובדים בלי JavaScript.</p></div>
+<div class="sectionhead"><h2>🔗 לינקים שימושיים</h2><p>קישורים שימושיים לפתיחה מהירה.</p></div>
 <div class="links">
 <a class="link" href="https://www.madametussauds.com/london/" target="_blank">Madame Tussauds<small>אתר רשמי</small></a>
 <a class="link" href="#frameless-ticket">Frameless<small>פתחי את 4 כרטיסי ה־QR בתוך העמוד</small></a>
@@ -569,7 +506,7 @@ main{width:min(1050px,calc(100% - 20px));margin:auto} .summary{display:grid;grid
 <a class="link" href="https://www.tesco.com/store-locator/london/10-16-goodge-street" target="_blank">Tesco Goodge St<small>הסופר ליד הדירה</small></a>
 </div>
 </section>
-<div class="footer">London 2026 · Family guide · v10 · Travel Wallet + To‑Do · ניווט ללא JavaScript</div>
+<div class="footer">London 2026 · Family guide · v11 · Travel Wallet + To‑Do · </div>
 </main>
 <nav class="bottom">
 <a href="#day23"><span>📅</span>לוז</a>
